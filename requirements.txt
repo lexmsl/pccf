@@ -13,7 +13,6 @@ numpy==1.20.1
 packaging==20.9
 pandas==1.2.3
 parso==0.8.1
--e git+https://gitlab.com/ms314/phd.git@5df5846c9817389ad4efa1e5f0ee1642e1548d07#egg=pccf
 pexpect==4.8.0
 pickleshare==0.7.5
 Pillow==8.0.1

@@ -12,7 +12,6 @@ matplotlib==3.3.3
 numpy==1.20.1
 packaging==20.9
 parso==0.8.1
--e git+https://gitlab.com/ms314/phd.git@87761f9a3a4707042ef03ddb91019d47c6b79bf4#egg=pccf
 pexpect==4.8.0
 pickleshare==0.7.5
 Pillow==8.0.1
