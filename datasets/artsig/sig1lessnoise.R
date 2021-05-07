@@ -1,0 +1,20 @@
+set.seed(112)
+sigma <- 0.1
+x <- c(rnorm(100) * sigma, rnorm(100) * sigma + 3.0, rnorm(100) * sigma)
+w <- 20
+indFunc <- c(rep(0, 100-w), rep(1, 2*w), rep(0, 100-2*w), rep(1, 2*w), rep(0, 100-w)) 
+
+plot(x, type = 'l')
+lines(indFunc*2, col="red", lw=2)
+abline(v=c(100, 200), col="blue",lw=2)
+
+if(1==1){
+  write.table(x, file = "./artsig1_LessNoise.dat", col.names = FALSE, row.names = FALSE)
+  write.table(indFunc, file = "./indfunc1.dat", col.names = FALSE, row.names = FALSE)
+  
+  png(filename = "./artsig1_LessNoise.PNG", width = 640, height=480, units = "px")
+  plot(x, type = 'l')
+  lines(indFunc*2, col="red", lw=2)
+  abline(v=c(100, 200), col="blue",lw=2)
+  dev.off()
+}
